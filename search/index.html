@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MAKERS - Search</title>
+    <style>
+
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('../fonts/Montserrat-Light.eot');
+            src: url('../fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/Montserrat-Light.woff') format('woff'),
+            url('../fonts/Montserrat-Light.ttf') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('../fonts/Montserrat-Bold.eot');
+            src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/Montserrat-Bold.woff') format('woff'),
+            url('../fonts/Montserrat-Bold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('../fonts/Montserrat-Thin.eot');
+            src: url('../fonts/Montserrat-Thin.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/Montserrat-Thin.woff') format('woff'),
+            url('../fonts/Montserrat-Thin.ttf') format('truetype');
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+            transition: all .3s ease-in;
+        }
+
+        body {
+            background-color: #2F2F2F;
+            overflow-x: hidden;
+        }
+
+        form {
+            position: relative;
+            padding: 0 80px;
+        }
+
+        input[type="text"] {
+            border: 0;
+            border-bottom: 1px solid #424242;
+            color: #fff;
+            font-size: 22px;
+            background: transparent;
+            font-weight: lighter;
+            width: 100%;
+            height: 60px;
+        }
+
+        form:after {
+            content: url('search-icon.svg');
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 10;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .active-search form:after {
+            content: url('makers-icon-white.svg');
+        }
+
+        input:focus, input:active {
+            outline: none;
+        }
+
+        .wrapper {
+            width: 75%;
+            margin: 0 auto;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .search-logo {
+            margin-bottom: 100px;
+        }
+
+        ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: #6E6E6E;
+            font-size: 45px;
+        }
+
+        ::-moz-placeholder { /* Firefox 19+ */
+            color: #6E6E6E;
+            font-size: 45px;
+        }
+
+        :-ms-input-placeholder { /* IE 10+ */
+            color: #6E6E6E;
+            font-size: 45px;
+        }
+
+        :-moz-placeholder { /* Firefox 18- */
+            color: #6E6E6E;
+            font-size: 45px;
+        }
+
+        .started {
+            background-color: #DF473F !important;
+            border: 0 !important;
+        }
+
+        .active-search {
+            width: 100% !important;
+            height: 70px;
+            padding: 25px;
+            background-color: #DF473F !important;
+            text-align: left;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .show {
+            display: inherit !important;
+        }
+
+        .search-articles {
+            display: none;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .number-search-results {
+            margin: 30px 0;
+            font-weight: lighter;
+            color: #ccc;
+            padding-left: 30px;
+        }
+
+        article {
+            padding: 30px 60px 30px 30px;
+            border-bottom: 1px solid #424242;
+        }
+
+        article:hover {
+            background-color: #414141;
+        }
+
+        article:hover .to-article-link:after {
+            content: url('red-arrow.svg');
+            position: absolute;
+            right: -20px;
+            top: 0;
+        }
+
+        article p {
+            font-weight: lighter;
+            font-size: 17px;
+            color: #f2f2f2;
+            line-height: 150%;
+        }
+
+        article h3 {
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .highlight {
+            color: #DF473F;
+            font-weight: 300;
+        }
+
+        .to-article-link {
+            color: #DF473F;
+            font-weight: bold;
+            font-size: 15px;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+            position: relative;
+        }
+
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="content-box">
+        <img src="search-logo.svg" alt="" class="search-logo">
+        <form id="search-form" action="index.html" method="post">
+            <input type="text" placeholder="What are you looking for?" id="toggle-input">
+        </form>
+    </div>
+</div>
+<div class="search-articles">
+    <div class="number-search-results">
+        0 results
+    </div>
+    <div class="article-box"></div>
+    <div class="article-box-template" style="display: none">
+        <article>
+            <a href="{HEADLINE_URL}" class="headline-link">
+                <h3>{TITLE}</h3>
+            </a>
+            <p>{EXCERPT}</p>
+            <a href="{ARTICLE_URL}" class="to-article-link">
+                weiter zum Artikel
+            </a>
+        </article>
+    </div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script>
+    function showResults(response) {
+
+        if (!response) {
+            return;
+        }
+
+        $('.article-box').html('&nbsp;');
+        $('.number-search-results').html(response.resultsFound + " results");
+
+        $.each(response.results, function (i, r) {
+            var article = $('.article-box-template').html();
+            article = article.replace("{HEADLINE_URL}", r.url);
+            article = article.replace("{ARTICLE_URL}", r.url);
+            article = article.replace("{TITLE}", r.title);
+            article = article.replace("{EXCERPT}", r.excerpt);
+            $('.article-box').append(article);
+        });
+
+        if (!$('#toggle-input').hasClass('started')) {
+            $('#toggle-input').addClass('started');
+            $('.wrapper').addClass('active-search');
+            $('.search-logo').addClass('hide');
+            $('.search-articles').addClass('show');
+        }
+    }
+
+    function loadResults(){
+        var query = $('#toggle-input').val();
+        if (query.length >= 3) {
+            $.ajax({
+                url: "http://blogsearch.makers.do/search2",
+                jsonp: "showResults",
+                dataType: "jsonp",
+                data: {
+                    query: query,
+                    format: "json"
+                }
+            });
+        }
+    }
+
+    $(function () {
+        $("#search-form").submit(function (event) {
+            loadResults();
+            event.preventDefault();
+        });
+
+        $('#toggle-input').on('keyup', function () {
+            loadResults();
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MAKERS - Turning Visions Into Reality</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<!-- Main CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<style>
+		input {
+			padding: 20px;
+			border-radius: 5px;
+			border: 1px solid #f2f2f2;
+			width: 100%;
+			display: block;
+			margin-bottom: 20px;
+		}
+
+		input[type="submit"] {
+			background-color: #DF473F;
+			color: #fff;
+			font-weight: 700;
+			transition: all .6s ease-in-out;
+			border: none;
+			max-width: 300px;
+			margin: 30px auto;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #C7362F;
+			color: #fff;
+			font-weight: 700;
+			box-shadow: 0 10px 30px #000;
+		}
+
+		.rooftopinfo {
+			padding: 100px 0 0;
+			position: relative;
+			z-index: 10;
+		}
+
+		.rooftopinfo h5 {
+			font-weight: bold;
+			font-size: 210%;
+			text-align: left;
+			text-transform: uppercase;
+			position: relative;
+		}
+
+		.rooftopinfo h4 {
+			font-weight: bold;
+			font-size: 180%;
+			text-align: center;
+			text-transform: uppercase;
+			position: relative;
+			margin-bottom: 20px;
+		}
+
+		.rooftopinfo h5:before {
+			content: url(../media/img/octagon.png);
+			position: absolute;
+			z-index: -1;
+			left: -20px;
+			top: -12px;
+		}
+
+		.rooftopinfo p {
+			font-weight: lighter;
+			font-size: 130%;
+			text-align: left;
+			margin:13px 0 40px;
+			color: #eee;
+		}
+
+		.important {
+			font-weight: bold;
+			/*background-color: #DF473F; */
+		}
+
+		.signup {
+			max-width: 450px;
+			margin: 0 auto;
+		}
+
+		.bottom-left {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 1;
+			max-width: 100%;
+		}
+
+		.bottom-right {
+			position: absolute;
+			bottom: 0;
+			right: -10%;
+			z-index: 1;
+			max-width: 100%;
+		}
+
+		.center-rt {
+			position: absolute;
+    		/* height: 91%; */
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    width: 100%;
+		    z-index: 0;
+		    margin: 0 auto;
+		    max-width: 647px;
+		}
+
+		.hero-joinus {
+			background:url(../media/img/bg-rt.jpg) no-repeat;
+			background-position: bottom;
+			background-size: cover;
+		}
+
+		.hero-joinus h1 {font-size:480%;}
+		.hero-joinus p {font-size: 200%;}
+
+		label {
+			font-weight: lighter;
+			color: #737373;
+			text-transform: uppercase;
+			font-size: 80%;
+			padding-left: 20px;
+			letter-spacing: 1px;
+		}
+
+		.speaker {
+			position:absolute;
+			top:-20px;
+		}
+
+		@media screen and (max-width: 991px) {
+			.speaker {
+				right: 0;
+				top: -50px;
+			}
+		}
+
+
+		@media screen and (max-width: 600px) {
+			.speaker {position: relative; display: block; margin: 0 auto; top: 0;}
+
+		}
+	</style>
+</head>
+<body data-spy="scroll" style="background-color:#1E1E1E;">
+
+				<div class="navbar-toggle">
+				  <div class="bar1"></div>
+				  <div class="bar2"></div>
+				  <div class="bar3"></div>
+				</div>
+<!-- MENU START -->
+	<nav class="nav-hide">
+		<ul>
+			<li><a href="../#whoweare" class="page-scroll">Who We Are</a></li>
+			<li><a href="../#howwework" class="page-scroll">How We Work</a></li>
+			<li><a href="../#companies" class="page-scroll">Companies</a></li>
+			<li><a href="../#trackrecord" class="page-scroll">Track Record</a></li>
+			<li><a href="../#people" class="page-scroll">People</a></li>
+			<li><a href="../#contactus" class="page-scroll">Contact Us</a></li>
+
+			<li style="padding-top:20px;" class="selected">Join Us</li>
+			<li><a href="../media">Media</a></li>
+			<li style="padding-bottom:20px;"><a href="../imprint">Imprint</a></li>
+
+			<li style="display:inline;" target="_blank"><a href="http://www.facebook.com/makers.do/"><i class="fa fa-facebook"></i></a></li>
+			<li style="display:inline;padding-left:30px;" target="_blank"><a href="https://www.linkedin.com/company/5388578?trk=tyah&trkInfo=clickedVertical%3Acompany%2CentityType%3AentityHistoryName%2CclickedEntityId%3Acompany_5388578%2Cidx%3A0"><i class="fa fa-linkedin"></i></a></li>
+			<li style="display:inline;padding-left:30px;" target="_blank"><a href="https://twitter.com/MakersDo"><i class="fa fa-twitter"></i></a></li>
+			<li style="display:inline;padding-left:30px;" target="_blank"><a href="https://medium.com/@Makers"><i class="fa fa-medium"></i></a></li>
+		</ul>
+	</nav>
+<!-- MENU END -->
+
+	<header id="page-top" class="navbar navbar-fixed-top" role="navigation">
+		<div>
+				<a href="../" class="logo page-scroll">
+					<svg width="100%" height="100%" viewBox="0 0 510 650" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+					    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+					        <g id="logo" sketch:type="MSLayerGroup" fill="#E9483E">
+					            <g id="Group" sketch:type="MSShapeGroup">
+					                <path d="M255,525.4 L54,409.6 L54,178.2 L255,62.5 L255,0.2 L228,15.7 L27.3,131.5 L0,147 L0,178.2 L0,409.6 L0,440.8 L27.2,456.4 L227.8,572.1 L255,587.7 L255,525.4 Z" id="Shape"></path>
+					                <path d="M255,124.5 L456,240.2 L456,471.6 L255,587.4 L255,649.7 L282,634.1 L482.7,518.4 L510,502.8 L510,471.6 L510,240.2 L510,209 L482.8,193.5 L282.2,77.7 L255,62.2 L255,124.5 Z" id="Shape"></path>
+					                <path d="M307.7,406.4 L307.7,304.1 L275.7,388.3 L235.2,388.3 L203.2,304.1 L203.2,406.4 L149.4,406.4 L149.4,219.6 L214.7,219.6 L255.5,317.1 L296.3,219.6 L361.6,219.6 L361.6,406.4 L307.7,406.4 L307.7,406.4 Z" id="Shape"></path>
+					            </g>
+					        </g>
+					    </g>
+					</svg>
+				</a>
+		</div>
+	</header>
+	<div class="hero-joinus">
+		<div class="container" style="padding-top:200px; text-align:center; position: relative; z-index:10;">
+			<h1 style="margin-top:0;">ROOFTOP TALKS</h1>
+			<p>Startups, Beers & Hotdogs</p>
+		</div>
+		<div class="edg-white-dwn">
+			<svg width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1440 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+   				 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        			<g id="black-edges-down" sketch:type="MSLayerGroup" transform="translate(-0.203125, 0.000000)" fill="#1E1E1E">
+            			<path d="M1440,49.4318182 L719,0 L719,50 L1440,49.4318182 Z" id="Path-21-Copy" sketch:type="MSShapeGroup" transform="translate(1079.500000, 25.000000) scale(-1, 1) translate(-1079.500000, -25.000000) "></path>
+            			<path d="M721.410156,49.4318182 L0.41015625,0 L0.41015625,50 L721.410156,49.4318182 Z" id="Path-21-Copy-3" sketch:type="MSShapeGroup"></path>
+        			</g>
+    			</g>
+			</svg>
+		</div>
+		<img src="../media/img/center-rt.png" class="center-rt">
+	</div>
+	<section id="jobs" style="position: relative; overflow: hidden;">
+		<!-- <img src="../media/img/bottom-left.png" alt="" class="bottom-left">
+		<img src="../media/img/bottom-right.png" alt="" class="bottom-right"> -->
+		<img src="../media/img/date.png" alt="" style="margin:0 auto; display: block;">
+		<div class="container rooftopinfo">
+			<div class="col-md-6">
+				<div class="row">
+					<h5>
+						Why Rooftop Talks?
+					</h5>
+					<p>
+						"Rooftop Talks" is a new, invite-only and free event series produced and hosted by MAKERS. Our first session takes place on July 14th, 2016 at 6:30 pm. Our goal is to connect people within Berlin’s tech scene, exchange knowledge, ideas and experiences.
+					</p>
+				</div>
+				<div class="row">
+					<div class="col-md-7" style="padding:0;">
+						<h5>
+							The Speaker
+						</h5>
+						<p><span class="important">Maks Giordano</span>, <span class="important">Co-Founder and Managing Director at kreait</span>, will hold a thirty-minute keynote about <i>„Corporate Innovation - How to bring companies into the digital age"</i> followed by a Q&A session.
+						</p>
+					</div>
+					<div class="col-md-5">
+						<img src="../media/img/thomas.png" style="" class="speaker">
+					</div>
+				</div>
+				<div class="row">
+					<h5>
+						The Timeline
+					</h5>
+					<p>
+						<span class="important">6:30 pm</span> Doors open <br>
+						<span class="important">7:00 pm</span> Keynote by Thomas Andrae<br>
+						<span class="important">7:30 pm</span> Q&A, hot dogs and networking
+					</p>
+				</div>
+				<div class="row">
+					<h5>
+						The Location
+					</h5>
+					<p>
+						The event takes place on MAKERS‘ rooftop terrace at <span class="important">Invalidenstraße 112, 10115 Berlin</span>.
+					</p>
+				</div>
+				<div class="row">
+					<h5>
+						How it is like
+					</h5>
+					<p>
+						The event takes place on MAKERS‘ rooftop terrace at <span class="important">Invalidenstraße 112, 10115 Berlin</span>.
+					</p>
+				</div>
+			</div>
+			<div class="col-md-6">
+		      <div id="form_submit_success" style="display:none;height:200px;text-align:center;">
+		          <p style="text-align:center; font-size:200%; font-weight:bold; color:#DF473F;">Thank you for signing up!</p>
+		        </div>
+				<form action="https://makers.us13.list-manage.com/subscribe/post-json?&c=?u=a422f2c967df94db767ef4c75&id=6d4cab3377" method="get" class="validate" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" validate>
+						<h4>Sign up here.</h4>
+						  <!-- <label for="name">Last Name</label>
+					    <input type="text" name="name" placeholder="Last name" required>
+					    <label for="firstname">First Name</label>
+					    <input type="text" name="firstname" placeholder="First name" required> -->
+					    <label for="email">Email</label>
+					    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+					    <!-- <label for="companyname">Name of your Company</label>
+					    <input type="text" name="companyname" placeholder="Name of the company you are working for" required> -->
+					    <input type="text" name="_gotcha" style="display:none" />
+				      <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+				</form>
+
+				<!-- <p style="text-align:center; font-size:200%; font-weight:bold; color:#DF473F;">Due to the great interest in our first rooftoptalk the sign up is now closed. We will keep you posted about our next event. </p> -->
+				<p style="text-align:center;font-size:14px;color:#777;margin:60px 0 20px 0">sponsored by</p>
+				<img src="../media/img/sponsor.png" width="90%" style="margin:0 auto;display:block;">
+			</div>
+
+		</div>
+	</section>
+
+	<footer>
+		<div class="footer-head">Follow Us</div>
+		<div class="socials">
+			<ul>
+				<li><a href="http://www.facebook.com/makers.do/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://www.linkedin.com/company/5388578?trk=tyah&trkInfo=clickedVertical%3Acompany%2CentityType%3AentityHistoryName%2CclickedEntityId%3Acompany_5388578%2Cidx%3A0" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="https://twitter.com/MakersDo" target="_blank"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="https://medium.com/@Makers" target="_blank"><i class="fa fa-medium"></i></a></li>
+			</ul>
+		</div>
+		<div class="footer-menu">
+			<ul>
+				<li><a href="../#whoweare" class="page-scroll">Who We Are</a></li>
+				<li><a href="../#howwework" class="page-scroll">How We Work</a></li>
+				<li><a href="../#companies" class="page-scroll">Companies</a></li>
+				<li><a href="../#trackrecord" class="page-scroll">Track Record</a></li>
+				<li><a href="../#people" class="page-scroll">People</a></li>
+				<li><a href="../#contactus" class="page-scroll">Contact Us</a></li>
+			</ul>
+			<ul class="footer-menu">
+				<li><a href="../joinus">Join Us</a></li>
+				<li><a href="../media">Media</a></li>
+				<li><a href="../imprint">Imprint</a></li>
+			</ul>
+		</div>
+		<div class="contacts">
+			<p style="font-size:135%; margin-bottom:15px;">MAKERS</p>
+			<p>MAKERS IT Services GmbH</p>
+			<p>Invalidenstraße 112, 10115 Berlin</p>
+			<p>Germany</p>
+			<p style="margin-top:15px;">+49 (0) 30 577 039 44</p>
+		</div>
+	</footer>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script type="text/javascript">
+  $(function() {
+    $('#myModal').on('hidden.bs.modal', function (e) {
+      $('#myModal iframe').attr("src", jQuery("#myModal iframe").attr("src"));
+    });
+
+
+    $('#mc-embedded-subscribe-form').submit(function(event){
+      $.ajax({
+        url: "https://makers.us13.list-manage.com/subscribe/post-json?&c=?u=a422f2c967df94db767ef4c75&id=6d4cab3377",
+        type: "get",
+        data: $('#mc-embedded-subscribe-form').serialize(),
+        dataType: "json",
+        success: function(result){
+          $("#mc-embedded-subscribe-form").trigger('reset').hide();
+          $('#form_submit_success').show();
+        }
+      });
+      return false;
+    });
+  });
+</script>
+    <script src="../js/min/custom-min.js"></script>
+</body>
+</html>
