@@ -11763,21 +11763,6 @@ a:hover {
     background-position: 0 -2250px;
 }
 
-.andre {
-    background-image: url(../media/img/profile/andre-eggert.jpg);
-    background-size: contain;
-}
-
-.andy {
-    background-image: url(../media/img/profile/andy-goldstein.jpg);
-    background-size: contain;
-}
-
-.thomas {
-    background-image: url(../media/img/profile/thomas-andrae.jpg);
-    background-size: contain;
-}
-
 
 /*
  * Note: using adjacent or general sibling selectors combined with
@@ -12091,16 +12076,12 @@ video#bgvid {
     width: 100%;
     height: 100%;
     position: relative;
-    overflow: hidden;
-}
-
-.edge-relative svg {
-/*    display: none;*/
 }
 
 .edge-container {
     width: 100%;
     height: 100%;
+    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
@@ -12171,7 +12152,7 @@ video#bgvid {
     background-color: #1E1E1E;
     position: relative;
     background-color: #1E1E1E;
-    background: linear-gradient( rgba(37, 37, 37, 0.6), rgba(37, 37, 37, 1)), url(../consulting/img/corporate-hero-bg.jpg) no-repeat;
+    background: linear-gradient( rgba(37, 37, 37, 0.6), rgba(37, 37, 37, 1)), url(img/corporate-hero-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -12324,66 +12305,27 @@ video#bgvid {
     bottom: -100%;
     left: 0;
     background: #1E1E1E;
+    /* Old browsers */
     background: -moz-linear-gradient(top, #1E1E1E 0%, #1E1E1E 50%, #111 100%);
+    /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1E1E1E), color-stop(50%, #111), color-stop(100%, #151515));
+    /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(top, #1E1E1E 0%, #1E1E1E 50%, #111 100%);
+    /* Chrome10+,Safari5.1+ */
     background: -o-linear-gradient(top, #1E1E1E 0%, #1E1E1E 50%, #111 100%);
+    /* Opera 11.10+ */
     background: -ms-linear-gradient(top, #1E1E1E 0%, #1E1E1E 50%, #111 100%);
+    /* IE10+ */
     background: linear-gradient(to bottom, #1E1E1E 0%, #1E1E1E 50%, #111 100%);
+    /* W3C */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1E1E1E', endColorstr='#151515', GradientType=0);
+    /* IE6-9 */
 }
 
 .pillar:hover .pillar-text {
     opacity: 1;
     padding-top: 45px;
 }
-
-
-
-
-/*////////////////// ––– SELECTED PARTER START ––– //////////////////*/
-
-
-#selected-partners {
-    background-color: #1E1E1E;
-    padding: 100px 0;
-    position: relative;
-}
-
-
-#selected-partners img {
-    max-width: 130px;
-    max-height: 60px;
-    margin: 0 auto;
-    transition: all .3s ease-in-out;
-}
-
-/*#selected-partners img:hover {
-    transform: scale(1.1);
-}
-*/
-#selected-partners .logo-box {
-    min-height: 200px;
-    display: flex;
-    align-items: center;
-    opacity: .4;
-}
-
-.row-eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-}
-
-@media screen and (max-width: 900px) {
-    #selected-partners .row-eq-height {
-    display: inherit;
-    }
-}
-
-/*////////////////// ––– SELECTED PARTER BEGINNING ––– //////////////////*/
-
 
 
 /*////////////////// ––– HOW WE WORK ––– //////////////////*/
@@ -12964,136 +12906,6 @@ video#bgvid {
 }
 
 
-/*////////////////// ––– WHAT OUR COMMUNITY THINKS ABOUT ––– //////////////////*/
-
-#what-think-about {
-    background-color: #1E1E1E;
-    padding: 100px 0;
-    position: relative;
-}
-
-#what-think-about .svg-portrait svg {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, -50%);
-}
-#what-think-about .community-portrait { 
-    position: absolute;
-    top: 0;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    width: 80px;
-    min-width: 80px;
-    max-width: 80px;
-    height: 80px;
-    min-height: 80px;
-    max-height: 80px;
-}
-#what-think-about .community-name {
-    color: #fff;
-    opacity: .8;
-    font-size: 22px;
-    padding-top: 15px;
-    font-weight: 700;
-}
-
-#what-think-about .community-jobtitle {
-    color: dimgrey !important;
-    font-size: 110%;
-    padding-bottom: 20px; 
-    color: #fff;
-    font-size: 140%;
-    font-weight: 400;
-    text-align: center;
-    font-style: italic;
-}
-#what-think-about .community-jobtitle:after {
-    content: ' ';
-    position: absolute;
-    top: 130px;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, -50%);
-    bottom: 0;
-    margin: 0;
-    padding: 0;
-    display: block;
-    width: 20px;
-    height: 3px;
-    background-color: #DF473F;
-}
-
-#what-think-about .community-jobtitle span:first-child {
-    font-weight: 600;
-    color: grey;
-    font-style: normal;
-}
-
-#what-think-about .community-jobtitle span:last-child {
-    color: grey;
-    font-style: normal;
-}
-
-#what-think-about .quotes {
-    position: relative;
-/*    border-top: 1px solid grey;*/
-    padding-top: 60px;
-    margin-top: 60px;
-}
-
-#what-think-about .quotes:hover {
-    transform: scale(1.05)
-}
-
-#what-think-about .quotes:hover .svg-portrait svg {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, -50%) scale(1.3)
-}
-
-#what-think-about .commnity-commas {
-    position: relative;
-    width: 100%;
-    height: 100px;
-}
-#what-think-about .commnity-commas:before {
-    color: grey;
-    font-size: 20em;
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100px;
-    top:0; 
-    left: 0;
-    bottom: 0;
-    right: 0;
-    padding: 0;
-    margin: 0;
-    content: '”';
-    line-height: .8;
-    text-align: center;
-    opacity: .1;
-}
-
-#what-think-about p {
-    margin: 0 10px;
-}
-
-/*
-.css-clipped{
-    -webkit-clip-path:polygon(130,0 0,160 0,485 270,645 560,485 560,160);
-    clip-path:polygon(130,0 0,160 0,485 270,645 560,485 560,160);
-}
-*/
-
 /*////////////////// ––– TRACK RECORD ––– //////////////////*/
 
 #trackrecord {
@@ -13473,7 +13285,7 @@ div {
     display: inline-block;
     width: 100%;
     height: 60xp;
-    background: url(../consulting/img/page-divider.svg) no-repeat;
+    background: url(img/page-divider.svg) no-repeat;
     background-size: 25px 18px;
     background-position: center;
     padding: 20px;
@@ -13526,7 +13338,7 @@ div {
     width: 100%;
     height: 18px;
     margin: 30px 0 10px 0;
-    background: url(../consulting/img/icon_open.svg) no-repeat;
+    background: url(img/icon_open.svg) no-repeat;
     background-size: 25px 18px;
     background-position: center;
     text-align: center;
@@ -13588,7 +13400,7 @@ div {
     }
 
     .our-framework-col:hover .our-framework-open-desc {
-        background: url(../consulting/img/icon_close.svg) no-repeat;
+        background: url(img/icon_close.svg) no-repeat;
         background-size: 25px 18px;
         background-position: center;
     }
@@ -13615,7 +13427,7 @@ div {
 }
 
 #building-structures {
-    background-image: url(../consulting/img/background_digital-structures.svg);
+    background-image: url(img/background_digital-structures.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
@@ -13680,7 +13492,7 @@ div {
     width: 100%;
     height: 18px;
     margin: 30px 0 10px 0;
-    background: url(../consulting/img/icon_close.svg) no-repeat;
+    background: url(img/icon_close.svg) no-repeat;
     background-size: 25px 18px;
     background-position: center;
     text-align: center;
@@ -13725,7 +13537,7 @@ div {
     }
 
     .building-structures-detailed:hover .building-structures-open-desc, .start .building-structures-open-desc {
-        background: url(../consulting/img/icon_open.svg) no-repeat;
+        background: url(img/icon_open.svg) no-repeat;
         background-size: 25px 18px;
         background-position: center;
     }
@@ -13844,7 +13656,7 @@ div {
 
 /*
 .our-framework-col:hover .our-framework-open-desc {
-    background: url(../consulting/img/icon_close.svg) no-repeat;
+    background: url(../corporate/img/icon_close.svg) no-repeat;
     background-size: 25px 18px;
     background-position: center;
 }

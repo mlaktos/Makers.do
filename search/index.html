@@ -95,23 +95,23 @@
         }
 
         ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            color: #6E6E6E;
-            font-size: 45px;
+            color: rgba(255,255,255,.35);
+            font-size: 22px;
         }
 
         ::-moz-placeholder { /* Firefox 19+ */
-            color: #6E6E6E;
-            font-size: 45px;
+            color: rgba(255,255,255,.35);
+            font-size: 22px;
         }
 
         :-ms-input-placeholder { /* IE 10+ */
-            color: #6E6E6E;
-            font-size: 45px;
+            color: rgba(255,255,255,.35);
+            font-size: 22px;
         }
 
         :-moz-placeholder { /* Firefox 18- */
-            color: #6E6E6E;
-            font-size: 45px;
+            color: rgba(255,255,255,.35);
+            font-size: 22px;
         }
 
         .started {
@@ -178,8 +178,10 @@
         }
 
         .highlight {
-            color: #DF473F;
-            font-weight: 300;
+          color: #fff;
+          font-weight: 300;
+          background: #DF473F;
+          font-weight: normal;
         }
 
         .to-article-link {
@@ -214,8 +216,8 @@
                 <h3>{TITLE}</h3>
             </a>
             <p>{EXCERPT}</p>
-            <a href="{ARTICLE_URL}" class="to-article-link">
-                weiter zum Artikel
+            <a href="{ARTICLE_URL}" class="to-article-link" target="_blank">
+                continue reading
             </a>
         </article>
     </div>
