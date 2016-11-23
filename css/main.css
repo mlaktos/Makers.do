@@ -11652,25 +11652,25 @@ a:hover {
 .nick {
     background-image: url(../media/img/profile/makers.png);
     background-size: 100% auto;
-    background-position: 0 -225px;
+    background-position: 0 -200px;
 }
 
 .marcus {
     background-image: url(../media/img/profile/makers.png);
     background-size: 100% auto;
-    background-position: 0 -450px;
+    background-position: 0 -400px;
 }
 
 .mathias {
     background-image: url(../media/img/profile/makers.png);
     background-size: 100% auto;
-    background-position: 0 -675px;
+    background-position: 0 -600px;
 }
 
 .marton {
     background-image: url(../media/img/profile/makers.png);
     background-size: 100% auto;
-    background-position: 0 -900px;
+    background-position: 0 -800px;
 }
 
 .scull {
@@ -11688,13 +11688,13 @@ a:hover {
 .david {
     background-image: url(../media/img/profile/makers.png);
     background-size: 100% auto;
-    background-position: 0 -1575px;
+    background-position: 0 -1400px;
 }
 
 .jana {
     background-image: url(../media/img/profile/makers-1.png);
     background-size: 100% auto;
-    background-position: 0 -1800px;
+    background-position: 0 -1600px;
 }
 
 .goran {
@@ -11730,7 +11730,7 @@ a:hover {
 .friedrich {
     background-image: url(../media/img/profile/founders.png);
     background-size: 100% auto;
-    background-position: 0 -1125px;
+    background-position: 0 -1000px;
 }
 
 .felipe {
@@ -11748,7 +11748,7 @@ a:hover {
 .marius {
     background-image: url(../media/img/profile/founders.png);
     background-size: 100% auto;
-    background-position: 0 -1800px;
+    background-position: 0 -1600px;
 }
 
 .francis {
@@ -13245,7 +13245,7 @@ video#bgvid {
 }
 
 .profile div {
-    width: 225px;
+    width: 200px;
     height: 225px;
     border-radius: 40%;
     opacity: 1;
